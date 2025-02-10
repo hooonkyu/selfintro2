@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+body{
+    margin: 0;
+    background-color: rgb(218, 222, 222);
+    flex-direction: column;
+}
+.bannerup{
+    width: 100vw;
+    height: 30px;  
+    color: white;
+    text-align: center;
+    line-height: 40px; /* 초기 세로 정렬 */
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: -60px; /* 처음에는 화면 위로 숨김 */
+    left: 0;
+    z-index: 98;
+    transition: top 0.3s ease-in-out, height 0.3s ease-in-out, line-height 0.3s ease-in-out;
+}
+    
+.bannerup.active {
+    top: 0;   /* 화면 위에서 내려옴 */
+    height: 40px;  /* 배너 높이 증가 */
+    line-height: 80px; /* 글자 세로 정렬 */
+    font-size: 24px;
+}
+
+.bannerdown{
+    width: 100vw;
+    height: 90px;
+    margin-top: 75px;
+}
+
+
+h1{
+    font-size: 300px;
+    font-family:"Roboto", serif;
+    font-weight: 1300;
+    text-align: center;
+    margin: 0;
+    line-height: 0.76;
+    background-color: rgb(97, 255, 255);
+}
+.parent{
+    position: relative;
+    background-color: blueviolet;
+
+}
+
+.contact{
+    font-size: 18px;
+    color: rgb(109, 31, 182);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 0.3;
+}
+.contact:hover {
+    color:aqua
+}
+
+
+.note {
+    width: 200px;
+    height: 200px;
+    background-color: #aaffbc;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: rotate(-3deg);
+    font-family: "Coming Soon", static;
+    position: absolute;
+    left: 50%; 
+    top: 50.5%;
+    transform: translate(-50%, -50%) rotate(-3deg);
+    cursor: grab;
+    z-index: 100;
+}
+
+.note textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-family:  "Coming Soon", static;
+    resize: none;
+    outline: none;
+}
+
+
+
+.first-paragraph{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family:"Roboto", serif;
+    font-weight: 700;
+    z-index: 101;
+}
+.second-paragraph{
+    color: rgb(255, 255, 255);
+    background-color: rgb(104, 104, 104);
+    margin-top: 0;
+    z-index: 99;
+}
+p{
+    text-align: center;
+}
+.third-paragraph{
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.four-paragraph{
+    font-size: 40px;
+    font-family:"Roboto", serif;
+
+}
+
+img{
+    width: 400px;
+}
+textarea{
+    align-items: left;
+    text-align: left;
+    color: rgb(120, 194, 194);
+}
+
+.five-paragraph {
+    font-size: 13px;
+    color: black;
+    text-align: left; 
+    padding: 10px 0;  
+    margin: 10px 0; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.wrapper {
+    display: flex; 
+    gap: 30px; 
+    margin-bottom: 70px;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.pic-container {
+    display: flex; 
+    overflow-x: scroll; 
+    gap: 20px; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.image {
+    width: 350px; 
+    height: auto; 
+    object-fit: contain;
+    margin: 37px;
+    filter: grayscale(100%) ;
+    transition: filter 0.3s ease;
+}
+
+.image:hover {
+    filter: grayscale(0%);
+}
+
+.text-after-images {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-width: 100%; 
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap; 
+    flex-shrink: 0;
+}
+
+
+
